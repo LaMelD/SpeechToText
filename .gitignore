@@ -1,0 +1,27 @@
+# 비밀 정보
+.env
+
+# 개인정보·회의 내용 (실명 성문 DB, 화자 음성 클립, 전사 결과, 실험 수집 데이터)
+voiceprints/
+enroll_out*/
+out*/
+spike/
+*.npy
+*.wav
+*.m4a
+*.aac
+*.mp3
+
+# 대용량 모델 파일 (README 안내대로 직접 내려받는다)
+models/
+
+# Python
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+
+# 도구 / OS
+.superpowers/
+.git.orig/
+.DS_Store

@@ -1,0 +1,15 @@
+[project]
+name = "stt-local-sherpa"
+version = "0.1.0"
+requires-python = ">=3.12"
+# torch / pyannote.audio / huggingface_hub 없음. onnxruntime 기반이라 훨씬 가볍다.
+dependencies = ["sherpa-onnx>=1.13", "numpy>=2", "openai>=3"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools]
+packages = ["stt_local"]
+
+[tool.pytest.ini_options]
+testpaths = ["test_stt_local.py"]

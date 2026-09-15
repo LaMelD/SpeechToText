@@ -1,0 +1,14 @@
+[project]
+name = "stt-local"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = ["pyannote.audio>=4", "openai>=3"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools]
+packages = ["stt_local"]
+
+[tool.pytest.ini_options]
+testpaths = ["test_stt_local.py"]   # spike/는 실험용, 수집 제외
